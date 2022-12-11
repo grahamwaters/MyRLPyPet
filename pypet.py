@@ -1,34 +1,3 @@
-# MyRLPyPet
-Reinforcement Learning Applied to digital pet behaviors.
-
-## Introduction
-
-The idea behind this project is quite simple. I want a digital pet. We love animals because they love us seemingly unconditionally. They also are cute because they act in ways that we find endearing. Using reinforcement learning and some machine learning modeling I would like to create a digital twin of a pet that I can interact with and that will act in ways that I find endearing. I will model the pet on my teacup Yorkie "Annie" and assign behaviors as a baseline that she exhibits. I will then use reinforcement learning to train the pet to behave (and misbehave) like a real pet would.
-
-# Digital Twin of a Pet
-The digital twin of a pet is a computer-generated version of a real-life animal. It is designed to mimic the behavior and characteristics of the pet it is modeled on. By using reinforcement learning, the digital twin can be trained to behave like the real pet, making it a virtual representation of the animal.
-
-# Logical Steps in Development
-
-To create a digital twin of a pet using reinforcement learning, the following steps are typically involved:
-
-Collect data on the real pet's behavior and characteristics. This can include observing the pet's actions, taking measurements of its physical features, and recording its vocalizations and other sounds.
-
-Create a digital model of the pet using a computer graphics program or other software. This model should be as realistic and detailed as possible, including the pet's appearance, movements, and sounds.
-
-Develop a reinforcement learning algorithm that can be used to train the digital pet. This algorithm should be able to take in data on the pet's behavior and use it to adjust the digital pet's actions and characteristics in real-time.
-
-Use the collected data and the reinforcement learning algorithm to train the digital pet. This can involve providing the digital pet with rewards for behaving in certain ways and punishments for behaving in other ways. The algorithm should be able to learn from this feedback and adjust the digital pet's behavior accordingly.
-
-Test the trained digital pet to ensure that it behaves like the real pet it is modeled on. This can involve interacting with the digital pet and observing its behavior in various scenarios.
-
-Refine the digital pet's behavior and characteristics as needed based on the results of the testing. This can involve adjusting the reinforcement learning algorithm, collecting more data on the real pet, or making changes to the digital pet's model.
-
-Once the digital pet is behaving satisfactorily, it can be made available for others to interact with and enjoy. This can involve creating a virtual environment for the digital pet to live in, or providing a user interface for interacting with the digital pet.
-
-# A Basic Digital Pet Class
-
-```python
 
 class pypet:
     # This is the basic class for a digital pet.
@@ -118,8 +87,3 @@ class pypet:
             self.thirst = self.thirst + 10 # add thirst from peeing
             self.happiness = self.happiness + random.randint(-1, 3) # could be happy or sad about peeing
             self.weight = self.weight - 1 # subtract weight for peeing
-
-
-
-
-```
